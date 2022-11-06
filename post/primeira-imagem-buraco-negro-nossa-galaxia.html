@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <!--Meta Dados-->
+    <meta charset="UTF-8">
+    <meta name="author" content="Astro Fantástico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="application-name" content="Astro Fantástico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="O dia 10 de abril de 2019, foi um momento histórico para a ciência. Porque pela primeira vez, foi possível tira uma foto de um buraco negro.">
+    <meta name="keywords" content="primeira imagem do buraco negro no centro da nossa galaxia, primeira imagem do buraco negro, buraco negro, sagittarius a, buraco negro sagittarius a, buraco negro m87, m87">
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/favicon/favicon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/icons/favicon/favicon.ico">
+    <link rel="manifest" href="../assets/icons/favicon/site.webmanifest">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!--Título-->
+    <title>A primeira imagem do buraco negro no centro da nossa galáxia divulgada por astrônomos</title>
+</head>
+<body id="body">
+
+    <!--Indicador Do Scroll-->
+    <span id="indicator"></span>
+  
+    <!--Header-->
+    <header>
+        <section id="header">
+            
+            <!--Logo-->
+            <a href="/">
+                <img src="../assets/icons/logo/logo.svg" alt="Astro Fantástico" class="logo">
+            </a>
+            
+            <!--Nav-->
+            <nav id="nav">
+
+                <!--Botão do Menu-->
+                <button id="btn-mobile">
+                    <span id="hamburger"></span>
+                </button>
+            
+                <!--Menu-->
+                <ul id="menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="../video/">Vídeos</a></li>
+                    <li id="active-subMenu">
+                        <a href="#">Categorias <i class="fa-solid fa-chevron-down"></i></a>
+
+                        <ul id="sub-menu">
+                            <li><a href="../categoria/astronomia/">Astronomia</a></li>
+                            <li><a href="../categoria/exploracao-espacial/">Exploração Espacial</a></li>
+                            <li><a href="../categoria/fisica/">Física</a></li>
+                            <li><a href="../categoria/noticia/">Notícia</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="curso" rel="noopen noreferrer">Curso</a></li>
+                    <li><a href="livro" rel="noopen noreferrer">Livro</a></li>
+                </ul>
+
+                <!--Busca-->
+                <button id="search">
+                    <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+                    <i class="fa-regular fa-circle-xmark" id="icon-close"></i>
+                </button>
+
+                <!--Caixa de Busca-->
+                <div id="search-box">
+                    <input class="search-txt" type="search" onkeyup="filter()" placeholder="Faça a sua pesquisa" id="input">
+                    
+                    <ul id="ul">
+                        <li>
+                            <h4>
+                                <a href="primeira-imagem-buraco-negro-nossa-galaxia/">A primeira imagem do buraco negro no centro da nossa galáxia divulgada por astrônomos</a>
+                            </h4>
+                        </li>
+
+                        <li>
+                            <h4>
+                                <a href="teoria-relatividade-geral-restrita/">Como funciona a Teoria da Relatividade Geral e a Restrita</a>
+                            </h4>
+                        </li>
+
+                        <li>
+                            <h4>
+                                <a href="telescopio-james-webb/">JAMES WEBB: O telescópio mais poderoso</a>
+                            </h4>
+                        </li>
+
+                        <li>
+                            <h4>
+                                <a href="stephenson-2-18/">STEPHENSON 2-18: Conheça a maior estrela do universo atualmente</a>
+                            </h4>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <!--Main-->
+    <main id="main">
+
+        <!--Artigo-->
+        <section id="content-box">
+            <article id="article">
+
+                <!--Categoria-->
+                <div id="category-path">
+                    <a href="/" title="Home"><i class="fa-solid fa-house-chimney"></i></a>
+                    <a href="../categoria/astronomia/">Astronomia</a>
+                    <a href="../categoria/noticia/">Notícia</a>
+                </div>
+
+                <!--Titulo-->
+                <hr>
+                <h1>A primeira imagem do buraco negro no centro da nossa galáxia divulgada por astrônomos</h1>
+                <time datetime="2022-11-01 08:00">01 de Novembro de 2022 ás 08h00</time>
+
+                <!--Compartilhar-->
+                <div id="share">
+                    <a href="https://api.whatsapp.com/send?text=https://albertosouzasoares.github.io/ass/posts/primeira-imagem-buraco-negro-nossa-galaxia/" target="_blank" title="Compartilhar com Whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://telegram.me/share/url?url=https://albertosouzasoares.github.io/ass/posts/primeira-imagem-buraco-negro-nossa-galaxia/" target="_blank" title="Compartilhar com Telegram">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://albertosouzasoares.github.io/ass/posts/primeira-imagem-buraco-negro-nossa-galaxia/" target="_blank" title="Compartilhar com Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="https://twitter.com/intent/tweet?text=https://albertosouzasoares.github.io/ass/posts/primeira-imagem-buraco-negro-nossa-galaxia/" target="_blank" title="Compartilhar com Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="mailto:?subject=https://albertosouzasoares.github.io/ass/posts/primeira-imagem-buraco-negro-nossa-galaxia/" target="_blank" title="Compartilhar com E-mail">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+
+                <!--Imagem-->
+                <figure>
+                    <img src="imagens/img-buraco-negro-sagittarius.jpg" alt="Primeira imagem do buraco negro Sagittarius A* que está no centro da nossa galáxia">
+
+                    <!--Referencia da Imagem ou Descrição-->
+                    <figcaption>Primeira imagem do buraco negro Sagittarius A* que está no centro da nossa galáxia</figcaption>
+                </figure>
+
+                <!--Conteudo do Artigo-->
+                <p>
+                    O dia 10 de abril de 2019, foi um momento histórico para a ciência. Porque pela primeira vez, foi possível tira uma foto de um buraco negro. E no dia 12 de maio de 2022, foi anunciado mais outra foto de um buraco negro mais próximo, que está no centro da nossa galaxia. O buraco negro Sagittarius A* (Sagittarius A estrela).
+                </p>
+
+                <h2>Sagittarius A*</h2>
+                <p>
+                    Em um artigo publicado em 31 de outubro de 2018, astrônomos detectaram aglomerados de gás se movendo a cerca de 30% da velocidade da luz, eram evidências conclusivas de que Sagittarius A* é um buraco negro.
+                </p>
+
+                <p>
+                    No dia 12 de maio de 2022, uma equipe de astrônomos do programa Event Horizon Telescope (EHT), divulgou um conjunto de imagens do burago negro Sagittarius A*. Foi necessário usar 8 telescópios para formar uma rede global de radiotelescópios. A primeira imagem havia sido divulgada em 2019, com o buraco negro da galáxia M87.
+                </p>
+
+                <!--Imagem-->
+                <figure>
+                    <img src="imagens/img-buraco-negro-comparacao.jpg" alt="Imagens dos buracos negros M87* e Sagittarius A* lado a lado">
+
+                    <!--Referencia da Imagem ou Descrição-->
+                    <figcaption>Imagens dos buracos negros M87* e Sagittarius A* lado a lado</figcaption>
+                </figure>
+
+                <p>
+                    O buraco negro no centro da Via-Láctea está a uma distância de 26 mil anos-lus, possui um diâmetro de 44.000.000 km e estima-se em cerca de que a massa e de 4,31 milhões de massas solares.
+                </p>
+
+                <h2>Porque fotografo o M87 primeiro</h2>
+                <p>
+                    Para captar uma imagem de um buraco negro é necessário que o buraco negro deve ser muito grande e não tenha obstáculos na frente do buraco negro. O buraco negro M87* foi mais fácil porque ele é grande e não tem obstáculos que atrapalham a observação. 
+                </p>
+
+                <p>
+                    Já o Sagittarius A* foi muito difícil porque tem muitos obstáculos na frente que atrapalham a observação e ele é pequeno visto aqui da terra. Agora imagine um donut na lua visto aqui da terra, é impossível ver esse donut a olho nu, mas com a rede de telescópios espalhados pelo mundo, as coisas ficam muito fáceis.
+                </p>
+
+                <h2>Event Horizon Telescope</h2>
+                <p>
+                    O projeto Event Horizon Telescope (EHT) é um grande conjunto de telescópios que consiste em uma rede global de radiotelescópios. O EHT envolve mais de 300 pesquisadores da África, América do Norte e do Sul, Ásia e Europa, tem como o objetivo de captar as imagens mais detalhadas já obtidas de buracos negros. 
+                </p>
+            </article>
+
+            <!--Aside-->
+            <aside>
+
+                <!--Posts Mais Recentes-->
+                <h3>Postagens mais recentes</h3>
+
+                <ul>
+                    <li><span>1</span> <a href="primeira-imagem-buraco-negro-nossa-galaxia/">A primeira imagem do buraco negro no centro da nossa galáxia divulgada por astrônomos</a></li>
+                    <li><span>2</span> <a href="teoria-relatividade-geral-restrita/">Como funciona a Teoria da Relatividade Geral e a Restrita</a></li>
+                    <li><span>3</span> <a href="telescopio-james-webb/">JAMES WEBB: O telescópio mais poderoso</a></li>
+                </ul>
+            </aside>
+        </section>
+
+        <hr>
+
+        <!--Anterior e Próximo-->
+        <div>
+            <a href="teoria-relatividade-geral-restrita/">&lt; Anterior</a>
+        </div>
+    </main>
+
+    <!--Caixa de Email-->
+    <section id="box-email">
+        <h2>Receba as novidades no seu e-mail!</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label for="name">Nome:</label><input type="text" name="name" id="nome" autocomplete="off" required>
+            <label for="email">Email:</label><input type="email" name="email" id="email" autocomplete="off" required>
+            <div id="btn-input">
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </div>
+            <input type="hidden" name="accessKey" value="2dd858c8-a302-41af-937c-4340a452f1d5">
+            <input type="hidden" name="redirectTo" value="http://192.168.0.110:5500">
+        </form>
+    </section>
+
+    <!--Botão do Scroll-->
+    <button id="scroll">
+        <i class="fa-solid fa-caret-up"></i>
+    </button>
+
+    <!--Footer-->
+    <footer>
+        <section id="footer">
+            <div id="footer-AstroFantastico">
+                <div>
+
+                    <!--Logo-->
+                    <img src="../assets/icons/logo/logo.svg" alt="Astro Fantástico" class="logo">
+
+                    <!--Redes Sociais-->
+                    <div id="social">
+                        <a href="https://instagram.com" target="_blank" title="Instagrma">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="https://youtube.com" target="_blank" title="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a href="https://facebook.com" target="_blank" title="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Sobre e Política-->
+            <div id="footer-link">
+                <a href="../sobre/" class="button">Sobre</a>
+                <a href="../politica-de-privacidade/" class="button">Política</a>
+            </div>
+        </section>
+
+        <!--Copyright Astro Fantástico-->
+        <p>&copy; Astro Fantástico - 2022</p>
+    </footer>
+
+    <!--Java Script-->
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/scroll.js"></script>
+    <script src="../assets/js/scroll-indicator.js"></script>
+    <script src="https://kit.fontawesome.com/e3320de23a.js" crossorigin="anonymous"></script>
+</body>
+</html>

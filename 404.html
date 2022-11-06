@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <!--Meta Dados-->
+    <meta charset="UTF-8">
+    <meta name="author" content="Astro Fantástico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="application-name" content="Astro Fantástico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon/favicon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/icons/favicon/favicon.ico">
+    <link rel="manifest" href="assets/icons/favicon/site.webmanifest">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1, h2, p, main .button {
+            text-align: center;
+            display: block;
+            margin: 10px;
+        }
+
+        h1 {
+            font-size: 200px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        @media (max-width: 500px) {
+            main {
+                height: calc(100vh - 360px);
+            }
+
+            h1 {
+                font-size: 100px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        } 
+    </style>
+
+    <!--Título-->
+    <title>Erro 404</title>
+</head>
+<body>
+
+    <!--Header-->
+    <header>
+        <section id="header">
+            
+            <!--Logo-->
+            <a href="/">
+                <img src="assets/icons/logo/logo.svg" alt="Astro Fantástico" class="logo">
+            </a>
+            
+            <!--Nav-->
+            <nav id="nav">
+
+                <!--Botão do Menu-->
+                <button id="btn-mobile">
+                    <span id="hamburger"></span>
+                </button>
+            
+                <!--Menu-->
+                <ul id="menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/video/">Vídeos</a></li>
+                    <li id="active-subMenu">
+                        <a href="#">Categorias <i class="fa-solid fa-chevron-down"></i></a>
+
+                        <ul id="sub-menu">
+                            <li><a href="categoria/astronomia/">Astronomia</a></li>
+                            <li><a href="categoria/exploracao-espacial/">Exploração Espacial</a></li>
+                            <li><a href="categoria/fisica/">Física</a></li>
+                            <li><a href="categoria/noticia/">Notícia</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="curso" rel="noopen noreferrer">Curso</a></li>
+                    <li><a href="livro" rel="noopen noreferrer">Livro</a></li>
+                </ul>
+
+                <!--Busca-->
+                <button id="search">
+                    <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+                    <i class="fa-regular fa-circle-xmark" id="icon-close"></i>
+                </button>
+
+                <!--Caixa de Busca-->
+                <div id="search-box">
+                    <input class="search-txt" type="search" onkeyup="filter()" placeholder="Faça a sua pesquisa" id="input">
+                    
+                    <ul id="ul">
+                        <li>
+                            <h4>
+                                <a href="post/primeira-imagem-buraco-negro-nossa-galaxia/">A primeira imagem do buraco negro no centro da nossa galáxia divulgada por astrônomos</a>
+                            </h4>
+                        </li>
+
+                        <li>
+                            <h4>
+                                <a href="post/teoria-relatividade-geral-restrita/">Como funciona a Teoria da Relatividade Geral e a Restrita</a>
+                            </h4>
+                        </li>
+
+                        <li>
+                            <h4>
+                                <a href="post/telescopio-james-webb/">JAMES WEBB: O telescópio mais poderoso</a>
+                            </h4>
+                        </li>
+
+                        <li>
+                            <h4>
+                                <a href="post/stephenson-2-18/">STEPHENSON 2-18: Conheça a maior estrela do universo atualmente</a>
+                            </h4>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </header>
+  
+    <!--Main-->
+    <main>
+        <section>
+            <h2>Ops! Não há nada aqui.</h2>
+            <h1>404</h1>
+            <p>A página que você está procurando não existe.</p>
+            <a href="/" class="button">Voltar para a página inicial</a>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <section id="footer">
+            <div id="footer-AstroFantastico">
+                <div>
+
+                    <!--Logo-->
+                    <img src="assets/icons/logo/logo.svg" alt="Astro Fantástico" class="logo">
+
+                    <!--Redes Sociais-->
+                    <div id="social">
+                        <a href="https://instagram.com" target="_blank" rel="noopen noreferrer" title="Instagrma">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="https://youtube.com" target="_blank" rel="noopen noreferrer" title="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a href="https://facebook.com" target="_blank" rel="noopen noreferrer" title="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Sobre e Política-->
+            <div id="footer-link">
+                <a href="sobre/" class="button">Sobre</a>
+                <a href="politica-de-privacidade/" class="button">Política</a>
+            </div>
+        </section>
+
+        <!--Copyright Astro Fantástico-->
+        <p>&copy; Astro Fantástico - 2022</p>
+    </footer>
+  
+    <!--JS-->
+    <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/e3320de23a.js" crossorigin="anonymous"></script>
+</body>
+</html>

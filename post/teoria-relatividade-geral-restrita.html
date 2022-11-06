@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <!--Meta Dados-->
+    <meta charset="UTF-8">
+    <meta name="author" content="Astro Fantástico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="application-name" content="Astro Fantástico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Teoria da Relatividade Geral é uma teoria geométrica da gravitação, a teoria da Relatividade Geral é representada por conjuntos de hipóteses que generalizam a lei da gravitação universal e a teoria da relatividade restrita.">
+    <meta name="keywords" content="teoria da relatividade geral, teoria da relatividade restrita, E = mc², albert einstein, espaço-tempo">
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/favicon/favicon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/icons/favicon/favicon.ico">
+    <link rel="manifest" href="../assets/icons/favicon/site.webmanifest">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!--Título-->
+    <title>Como funciona a Teoria da Relatividade Geral e a Restrita</title>
+</head>
+<body id="body">
+
+    <!--Indicador Do Scroll-->
+    <span id="indicator"></span>
+  
+    <!--Header-->
+    <header>
+        <section id="header">
+            
+            <!--Logo-->
+            <a href="/">
+                <img src="../assets/icons/logo/logo.svg" alt="Astro Fantástico" class="logo">
+            </a>
+            
+            <!--Nav-->
+            <nav id="nav">
+
+                <!--Botão do Menu-->
+                <button id="btn-mobile">
+                    <span id="hamburger"></span>
+                </button>
+            
+                <!--Menu-->
+                <ul id="menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="../video/">Vídeos</a></li>
+                    <li id="active-subMenu">
+                        <a href="#">Categorias <i class="fa-solid fa-chevron-down"></i></a>
+
+                        <ul id="sub-menu">
+                            <li><a href="../categoria/astronomia/">Astronomia</a></li>
+                            <li><a href="../categoria/exploracao-espacial/">Exploração Espacial</a></li>
+                            <li><a href="../categoria/fisica/">Física</a></li>
+                            <li><a href="../categoria/noticia/">Notícia</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="curso" rel="noopen noreferrer">Curso</a></li>
+                    <li><a href="livro" rel="noopen noreferrer">Livro</a></li>
+                </ul>
+
+                <!--Busca-->
+                <button id="search">
+                    <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+                    <i class="fa-regular fa-circle-xmark" id="icon-close"></i>
+                </button>
+
+                <!--Caixa de Busca-->
+                <div id="search-box">
+                    <input class="search-txt" type="search" onkeyup="filter()" placeholder="Faça a sua pesquisa" id="input">
+                    
+                    <ul id="ul">
+                        <li>
+                            <h4>
+                                <a href="primeira-imagem-buraco-negro-nossa-galaxia/">A primeira imagem do buraco negro no centro da nossa galáxia divulgada por astrônomos</a>
+                            </h4>
+                        </li>
+
+                        <li>
+                            <h4>
+                                <a href="teoria-relatividade-geral-restrita/">Como funciona a Teoria da Relatividade Geral e a Restrita</a>
+                            </h4>
+                        </li>
+
+                        <li>
+                            <h4>
+                                <a href="telescopio-james-webb/">JAMES WEBB: O telescópio mais poderoso</a>
+                            </h4>
+                        </li>
+
+                        <li>
+                            <h4>
+                                <a href="stephenson-2-18/">STEPHENSON 2-18: Conheça a maior estrela do universo atualmente</a>
+                            </h4>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <!--Main-->
+    <main id="main">
+
+        <!--Artigo-->
+        <section id="content-box">
+            <article id="article">
+
+                <!--Categoria-->
+                <div id="category-path">
+                    <a href="/" title="Home"><i class="fa-solid fa-house-chimney"></i></a>
+                    <a href="../categoria/fisica/">Física</a>
+                </div>
+
+                <!--Titulo-->
+                <hr>
+                <h1>Como funciona a Teoria da Relatividade Geral e a Restrita</h1>
+                <time datetime="2022-10-31 19:00">31 de Outubro de 2022 ás 19h00</time>
+
+                <!--Compartilhar-->
+                <div id="share">
+                    <a href="https://api.whatsapp.com/send?text=https://albertosouzasoares.github.io/ass/post/teoria-relatividade-geral-restrita/" target="_blank" title="Compartilhar com Whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://telegram.me/share/url?url=https://albertosouzasoares.github.io/ass/posts/teoria-relatividade-geral-restrita/" target="_blank" title="Compartilhar com Telegram">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://albertosouzasoares.github.io/ass/posts/teoria-relatividade-geral-restrita/" target="_blank" title="Compartilhar com Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="https://twitter.com/intent/tweet?text=https://albertosouzasoares.github.io/ass/posts/teoria-relatividade-geral-restrita/" target="_blank" title="Compartilhar com Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="mailto:?subject=https://albertosouzasoares.github.io/ass/posts/teoria-relatividade-geral-restrita/" target="_blank" title="Compartilhar com E-mail">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+
+                <!--Imagem-->
+                <figure>
+                    <img src="imagens/img-curvatura-espaço-tempo.jpg" alt="Curvatura do espaço-tempo">
+
+                    <!--Referencia da Imagem ou Descrição-->
+                    <figcaption>Curvatura do espaço-tempo</figcaption>
+                </figure>
+
+                <!--Conteudo do Artigo-->
+                <p>
+                    A Teoria da Relatividade Geral é uma teoria geométrica da gravitação, a teoria da Relatividade Geral é representada por conjuntos de hipóteses que generalizam a lei da gravitação universal e a teoria da relatividade restrita.
+                </p>
+
+                <h2>Lei da Gravitação Universal</h2>
+                <p>
+                    A Gravitação Universal é uma lei que afirma que se dois corpos possuem massa, eles sofrem a ação de uma força atrativa proporcional às suas massas e inversamente proporcional ao quadrado da distância que separa seus centros de gravidade.
+                </p>
+
+                <p>
+                    A gravidade é uma força fundamental de atração da natureza que age entre os objetos por causa de suas massas. A gravidade mantém os objetos celestes unidos e ligados, como os gases quentes contidos pelo Sol e os planetas, confinados às suas órbitas.
+                </p>
+
+                <h2>Teoria da Relatividade Restrita</h2>
+                <p>
+                    A Teoria da Relatividade Restrita tem como base descrever o movimento de campos eletromagnético na ausência de campos gravitacionais. Resumindo, a teoria da relatividade restrita tem como base dois postulados:
+                </p>
+
+                <ul>
+                    <li>1° A velocidade de propagação da luz no vácuo é a mesma em todos os sistemas de referência.</li>
+                    <br>
+                    <li>2° Todas as leis da natureza são as mesmas em todos os sistemas de referência.</li>
+                </ul>
+
+                <p>
+                    A Relatividade Restrita também modificou a noção de energia. A energia pode ser convertida em massa e esta passou a ser considerada uma forma de energia. Este princípio é chamado de equivalência massa-energia e pode ser expresso pela fórmula:
+                </p>
+
+                <strong style="display: block; text-align: center;">E = mc²</strong>
+
+                <div style="margin-left: 36px;">
+                    <strong>E</strong> = energia de repouso <br>
+                    <strong>m</strong> = massa <br>
+                    <strong>c</strong> = velocidade da luz
+                </div>
+
+                <p>
+                    A equivalência massa-energia é facilmente verificada nas reações nucleares, onde núcleos e partículas converte massa em energia e vice-versa.
+                </p>
+
+                <h2>Teoria da Relatividade Geral</h2>
+                <p>
+                    A Teoria da Relatividade Geral descreve os movimentos de objetos não mais como ação de forças, mas sim como trajetórias sobre a superfície do espaço-tempo.
+                </p>
+
+                <p>
+                    A teoria é basicamente a presença de matéria que encurva o espaço-tempo. Assim, quanto maior for a massa do corpo, mais ele encurva o espaço-tempo ao seu redor.
+                    Resumindo, a matéria diz ao espaço como se curva e a curva do espaço diz a matéria como ela tem que se mover.
+                </p>
+
+                <p>
+                    Com a Relatividade Geral, Einstein fez diversas previsões em experimentos, como explicar o comportamento anômalo da órbita de Mercúrio, algo que nem mesmo a física newtoniana não era capaz de fazer. Foi previsto também que a medida do tempo também sofreria a influência dos campos gravitacionais. Quanto mais intenso o campo, mais lentamente passaria o tempo.
+                </p>
+
+                <h2>Albert Einstein</h2>
+
+                <!--Imagem-->
+                <figure>
+                    <img src="imagens/img-albert-einstein.jpg" alt="Albert Einstein">
+
+                    <!--Referencia da Imagem ou Descrição-->
+                    <figcaption>Albert Einstein</figcaption>
+                </figure>
+
+                <p>
+                    Albert Einstein (1879-1955) foi um físico teórico alemão, nascido na cidade de Ulm. Albert Einstein desenvolveu a teoria da relatividade geral, um dos pilares da física moderna ao lado da mecânica quântica. Embora ele seja mais conhecido por sua fórmula de equivalência massa-energia, E = mc².
+                </p>
+
+                <p>
+                    Em 1921 Einstein foi premiado com o Prêmio Nobel de Física por suas contribuições na física teórica e, especialmente, por sua descoberta da lei do efeito fotoelétrico, que foi fundamental no estabelecimento da teoria quântica.
+                </p>
+            </article>
+
+            <!--Aside-->
+            <aside>
+
+                <!--Posts Mais Recentes-->
+                <h3>Postagens mais recentes</h3>
+
+                <ul>
+                    <li><span>1</span> <a href="primeira-imagem-buraco-negro-nossa-galaxia/">A primeira imagem do buraco negro no centro da nossa galáxia divulgada por astrônomos</a></li>
+                    <li><span>2</span> <a href="teoria-relatividade-geral-restrita/">Como funciona a Teoria da Relatividade Geral e a Restrita</a></li>
+                    <li><span>3</span> <a href="telescopio-james-webb/">JAMES WEBB: O telescópio mais poderoso</a></li>
+                </ul>
+            </aside>
+        </section>
+
+        <hr>
+
+        <!--Anterior e Próximo-->
+        <div>
+            <a href="telescopio-james-webb/">&lt; Anterior</a>
+            <a href="primeira-imagem-buraco-negro-nossa-galaxia/">Próximo &#62;</a>
+        </div>
+    </main>
+
+    <!--Caixa de Email-->
+    <section id="box-email">
+        <h2>Receba as novidades no seu e-mail!</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label for="name">Nome:</label><input type="text" name="name" id="nome" autocomplete="off" required>
+            <label for="email">Email:</label><input type="email" name="email" id="email" autocomplete="off" required>
+            <div id="btn-input">
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </div>
+            <input type="hidden" name="accessKey" value="2dd858c8-a302-41af-937c-4340a452f1d5">
+            <input type="hidden" name="redirectTo" value="http://192.168.0.110:5500">
+        </form>
+    </section>
+
+    <!--Botão do Scroll-->
+    <button id="scroll">
+        <i class="fa-solid fa-caret-up"></i>
+    </button>
+
+    <!--Footer-->
+    <footer>
+        <section id="footer">
+            <div id="footer-AstroFantastico">
+                <div>
+
+                    <!--Logo-->
+                    <img src="../assets/icons/logo/logo.svg" alt="Astro Fantástico" class="logo">
+
+                    <!--Redes Sociais-->
+                    <div id="social">
+                        <a href="https://instagram.com" target="_blank" title="Instagrma">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="https://youtube.com" target="_blank" title="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a href="https://facebook.com" target="_blank" title="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Sobre e Política-->
+            <div id="footer-link">
+                <a href="../sobre/" class="button">Sobre</a>
+                <a href="../politica-de-privacidade/" class="button">Política</a>
+            </div>
+        </section>
+
+        <!--Copyright Astro Fantástico-->
+        <p>&copy; Astro Fantástico - 2022</p>
+    </footer>
+
+    <!--Java Script-->
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/scroll.js"></script>
+    <script src="../assets/js/scroll-indicator.js"></script>
+    <script src="https://kit.fontawesome.com/e3320de23a.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <!--Meta Dados-->
+    <meta charset="UTF-8">
+    <meta name="author" content="Astro Fantástico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="application-name" content="Astro Fantástico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Astro Fantástico, traz informação sobre astronomia, física e exploração espacial">
+    <meta name="keywords" content="Astro Fantástico, astro fantastico, astronomia, astrofísica, física, espaço, cíencia, universo">
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon/favicon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/icons/favicon/favicon.ico">
+    <link rel="manifest" href="assets/icons/favicon/site.webmanifest">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--Título-->
+    <title>Astro Fantástico - Astronomia, física e muito mais</title>
+</head>
+<body>
+
+    <!--Header-->
+    <header>
+        <section id="header">
+            
+            <!--Logo-->
+            <a href="/">
+                <img src="assets/icons/logo/logo.svg" alt="Astro Fantástico" class="logo">
+            </a>
+            
+            <!--Nav-->
+            <nav id="nav">
+
+                <!--Botão do Menu-->
+                <button id="btn-mobile">
+                    <span id="hamburger"></span>
+                </button>
+            
+                <!--Menu-->
+                <ul id="menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/video/">Vídeos</a></li>
+                    <li id="active-subMenu">
+                        <a href="#">Categorias <i class="fa-solid fa-chevron-down"></i></a>
+
+                        <ul id="sub-menu">
+                            <li><a href="categoria/astronomia/">Astronomia</a></li>
+                            <li><a href="categoria/exploracao-espacial/">Exploração Espacial</a></li>
+                            <li><a href="categoria/fisica/">Física</a></li>
+                            <li><a href="categoria/noticia/">Notícia</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="curso" rel="noopen noreferrer">Curso</a></li>
+                    <li><a href="livro" rel="noopen noreferrer">Livro</a></li>
+                </ul>
+
+                <!--Busca-->
+                <button id="search">
+                    <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+                    <i class="fa-regular fa-circle-xmark" id="icon-close"></i>
+                </button>
+
+                <!--Caixa de Busca-->
+                <div id="search-box">
+                    <input class="search-txt" type="search" onkeyup="filter()" placeholder="Faça a sua pesquisa" id="input">
+                    
+                    <ul id="ul">
+                        <li>
+                            <h4>
+                                <a href="post/primeira-imagem-buraco-negro-nossa-galaxia/">A primeira imagem do buraco negro no centro da nossa galáxia divulgada por astrônomos</a>
+                            </h4>
+                        </li>
+
+                        <li>
+                            <h4>
+                                <a href="post/teoria-relatividade-geral-restrita/">Como funciona a Teoria da Relatividade Geral e a Restrita</a>
+                            </h4>
+                        </li>
+
+                        <li>
+                            <h4>
+                                <a href="post/telescopio-james-webb/">JAMES WEBB: O telescópio mais poderoso</a>
+                            </h4>
+                        </li>
+
+                        <li>
+                            <h4>
+                                <a href="post/stephenson-2-18/">STEPHENSON 2-18: Conheça a maior estrela do universo atualmente</a>
+                            </h4>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </header>
+  
+    <!--Main-->
+    <main>
+        
+        <!--Recente-->
+        <article id="recent">
+            <a href="post/primeira-imagem-buraco-negro-nossa-galaxia/" id="post-image">
+                <span class="category">Notícia</span>
+                <img src="post/imagens/img-buraco-negro-sagittarius.jpg" alt="Primeira imagem do buraco negro Sagittarius A* que está no centro da nossa galáxia"/>
+            </a>
+
+            <section>
+                <h2>
+                    <a href="/pag">A primeira imagem do buraco negro no centro da nossa galáxia divulgada por astrônomos</a>
+                </h2>
+                <p>O dia 10 de abril de 2019, foi um momento histórico para a ciência. Porque pela primeira vez, foi possível tira uma foto de um buraco negro.</p>
+                <time datetime="2022-11-01 08:00">01 de Novembro de 2022 ás 08h00</time>
+                <hr>
+                <a class="button" href="post/primeira-imagem-buraco-negro-nossa-galaxia/">Leia mais</a>
+            </section>
+        </article>
+        
+        <!--Posts-->
+        <section id="posts">
+            <section>
+                <a href="post/teoria-relatividade-geral-restrita/">
+                    <img src="post/imagens/img-curvatura-espaço-tempo.jpg" alt="Curvatura do espaço-tempo"/>
+                    <span class="category">Física</span>
+                    <div>
+                        <time datetime="2022-10-31 19:00">31 de Outubro de 2022 ás 19h00</time>
+                        <h3>Como funciona a Teoria da Relatividade Geral e a Restrita</h3>
+                    </div>
+                </a>
+
+                <a href="post/telescopio-james-webb/">
+                    <img src="post/imagens/img-telescopio-espacial-james-webb.jpg" alt="Telescópio Espacial james Webb"/>
+                    <span class="category">Exploração Espacial</span>
+                    <div>
+                        <time datetime="2022-11-31 20:00">31 de Novembro de 2022 ás 20h00</time>
+                        <h3>JAMES WEBB: O telescópio mais poderoso</h3>
+                    </div>
+                </a>
+            </section>
+
+            <section>
+                <a href="post/stephenson-2-18/">
+                    <img src="post/imagens/img-stephenson-2-18.jpg" alt="Comparação de tamanho de stephenson 2-18 e VY Canis Majoris"/>
+                    <span class="category">Astronomia</span>
+                    <div>
+                        <time datetime="2022-10-30 20:00">30 de outubro de 2022</time>
+                        <h3>STEPHENSON 2-18: Conheça a maior estrela do universo atualmente</h3>
+                    </div>
+                </a>
+            </section>
+
+            <!--Carregar Mais Publicações-->
+            <a href="mais/" class="button">Carregar mais publicações</a>
+        </section>
+
+        <!--Caixa de Email-->
+        <section id="box-email">
+            <h2>Receba as novidades no seu e-mail!</h2>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <label for="name">Nome:</label><input type="text" name="name" id="nome" autocomplete="off" required>
+                <label for="email">Email:</label><input type="email" name="email" id="email" autocomplete="off" required>
+                <div id="btn-input">
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar">
+                </div>
+                <input type="hidden" name="accessKey" value="2dd858c8-a302-41af-937c-4340a452f1d5">
+                <input type="hidden" name="redirectTo" value="http://192.168.0.110:5500">
+            </form>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <section id="footer">
+            <div id="footer-AstroFantastico">
+                <div>
+
+                    <!--Logo-->
+                    <img src="assets/icons/logo/logo.svg" alt="Astro Fantástico" class="logo">
+
+                    <!--Redes Sociais-->
+                    <div id="social">
+                        <a href="https://instagram.com" target="_blank" rel="noopen noreferrer" title="Instagrma">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="https://youtube.com" target="_blank" rel="noopen noreferrer" title="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a href="https://facebook.com" target="_blank" rel="noopen noreferrer" title="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Sobre e Política-->
+            <div id="footer-link">
+                <a href="sobre/" class="button">Sobre</a>
+                <a href="politica-de-privacidade/" class="button">Política</a>
+            </div>
+        </section>
+
+        <!--Copyright Astro Fantástico-->
+        <p>&copy; Astro Fantástico - 2022</p>
+    </footer>
+  
+    <!--JS-->
+    <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/e3320de23a.js" crossorigin="anonymous"></script>
+</body>
+</html>
